@@ -18,8 +18,8 @@ def load_exchange_rates(file):
     with open(file) as exchange_file:
         csv_reader = reader(exchange_file)
         for row in csv_reader:
-            # Store exchange rates as uppercase currency codes
-            exchange_rates[row[0].upper()] = float(row[1])
+
+            exchange_rates[row[0].upper()] = float(row[1]) # Store exchange rates as uppercase currency
 
 # Function to load flight costs from a CSV file
 def load_flight_costs(file):
